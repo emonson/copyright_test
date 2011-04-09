@@ -1,0 +1,1 @@
+{"index": "function(doc) { var ret=new Document(); ret.add(doc.judge, {'field':'judge'}); ret.add(doc.date, {'field':'date'}); ret.add(doc.content, {'field':'content'}); return ret }"}
