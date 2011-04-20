@@ -9,11 +9,11 @@
 		<key>ContentSize</key>
 		<string>{1151, 653}</string>
 		<key>ProjectURL</key>
-		<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/copyright_test.esproj/</string>
+		<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/copyright_test.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{87, 766}</string>
+		<string>{132, 990}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -21,11 +21,15 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/_attachments/style</string>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/shows</string>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/templates</string>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/vendor/couchapp/lib</string>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/views</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/_attachments/style</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/junk</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/junk2</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/recent-items</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
@@ -36,13 +40,37 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/vendor/couchapp/_attachments/loader.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/decision.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/_attachments/index.html</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists/bar.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/foo.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/moge.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/fuga.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/junk2/map.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
