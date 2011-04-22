@@ -46,31 +46,37 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists/bar.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists/summary.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/foo.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/decision.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/moge.html</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/decision.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/fuga.html</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/summary.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/junk2/map.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/date/map.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_field.json</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

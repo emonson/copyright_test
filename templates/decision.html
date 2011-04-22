@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>{{date}}</h1>
+    <h2>{{type}}</h2>
+    <!-- Any straight html that gets passed needs the 
+         triple mustaches so it is "unescaped" and acts like
+         real html rather than printing all the <p>, etc. 
+         {{{world}}} uses markdown.encode which generates html from markdown -->
+    {{{content}}}
+  </body>
+</html>
