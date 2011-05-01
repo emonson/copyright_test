@@ -1,0 +1,9 @@
+<p>Query results:</p>
+<p>{{query_string}}</p>
+<p>{{num_results}} results</p>
+<ul>
+{{#results}}
+  <li>{{score}} &middot; <a href="./_show/decision/{{id}}" class="docid">{{date}}</a><br />
+  {{content}}</li>
+{{/results}}
+</ul>

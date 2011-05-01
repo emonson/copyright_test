@@ -11,9 +11,9 @@ function(doc, req) {
     var html = markdown.encode(doc.content);
     
     var data = {
-	"date": doc.date,
-	"type": doc.type,
-	"content": html
+	    "date": doc.date,
+	    "type": doc.type,
+	    "content": html
     };
     
     return mustache.to_html(this.templates.decision, data);

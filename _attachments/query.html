@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copyright decisions lucene search form</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+  </head>
+  
+  <body>
+    <h1>Copyright decisions lucene search</h1>
+     <div id="queryform"><p>Some examples</p></div>
+     <div id="queryresults"><p>Empty items!</p></div>
+    <div id="sidebar"><p>Empty sidebar!</p></div>
+  </body>
+  
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $("#queryform").evently("queryform", app);
+      $("#queryresults").evently("queryresults", app);
+      $.evently.connect("#queryform", "#queryresults", ["doQuery"]);
+    });
+  </script>
+  
+</html>
