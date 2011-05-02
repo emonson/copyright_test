@@ -36,11 +36,13 @@ h1 {
 }
 
 #queryresults {
-  border:4px solid #eed;
+  border:4px solid #e9e9d0;
   background:#ffe;
   padding:8px;
-  width:60%;
-  float:left;
+}
+
+#queryresults li {
+  margin: 1em 0em;
 }
 
 #sidebar {
@@ -60,7 +62,7 @@ h1 {
 form {
   padding:4px;
   margin:6px;
-  background-color:#ddd;  
+  background-color:#eee;  
 }
 
 div.avatar {
