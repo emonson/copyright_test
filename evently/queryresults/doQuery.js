@@ -4,7 +4,7 @@ function(e, query_string) {
   $(this).trigger("_init");
   $$(this).query_string = query_string;
   $.ajax({
-    url:"../../_fti/_design/copyright_test/by_content?limit=5000&q=" + query_string,
+    url:"../../_fti/_design/copyright_test/by_field?limit=5000&q=" + query_string,
     dataType:"json",
     error:function(r) {
       elem.trigger("queryError")

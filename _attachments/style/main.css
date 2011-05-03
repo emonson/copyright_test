@@ -20,6 +20,32 @@ h1 {
   margin-bottom:8px;
 }
 
+form {
+  padding:4px;
+  margin:6px;
+  background-color:#eaeae0;  
+}
+
+input {
+  font:1em Helvetica, sans-serif;
+  padding: 4px;
+}
+
+#header {
+  padding:4px;
+  margin: 0px 12px;
+  float: right;
+}
+
+#post_content {
+  padding:4px;
+  margin:6px;
+}
+
+.light_id {
+  color: #ccc;
+}
+
 #items {
   border:4px solid #dde;
   background:#eef;
@@ -89,4 +115,25 @@ div.avatar img {
 
 #items ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+}
+
+a:link {
+	color: #183466;
+}
+
+a:visited {
+	color: #600;
+}
+
+a:active {
+	color: #339;
+}
+
+a:hover {
+	color: black;
 }

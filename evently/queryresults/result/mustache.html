@@ -3,7 +3,7 @@
 <p>{{num_results}} results</p>
 <ul>
 {{#results}}
-  <li>{{score}} &middot; <a href="./_show/decision/{{id}}" class="docid">{{date}}</a><br />
-  {{content}}</li>
+  <li>{{score}} <a href="./_show/view/{{id}}" class="docid">&middot; {{date}}</a><br />
+  {{content}}<br /><span class="light_id">{{id}}</span></li>
 {{/results}}
 </ul>

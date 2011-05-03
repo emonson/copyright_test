@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="{{assets}}/style/main.css" type="text/css">
+  </head>
+  <body>
+    {{>header}}
+
+    <div id="edit_content">
+
+    <form id="edit_decision" method="post">
+      <h3>Date:</h3>
+      <p><input type="text" size="50" name="date" value="{{date}}"></p>
+      
+      <h3>Relevant:</h3>
+      <p><input type="checkbox" name="relevant" {{relevant}}></p>
+      
+      <p>
+        <input type="submit" value="Save &rarr;"/> 
+        <span id="saved" style="display:none;">Saved</span>
+      </p>
+        
+    </form>
+
+      <h3>Attachments:</h3>
+      {{#attachments}}
+        <li><a href="{{att_url}}">{{att_name}}</a></li>
+      {{/attachments}}
+      
+      <!-- Any straight html that gets passed needs the 
+           triple mustaches so it is "unescaped" and acts like
+           real html rather than printing all the <p>, etc. 
+           {{{world}}} uses markdown.encode which generates html from markdown -->
+      <h3>Content:</h3>
+      {{{content}}}
+    
+      <h3>Type:</h3>
+      <p>{{type}}</p>
+      
+      <h3>ID:</h3>
+      <p>{{id}}</p>
+      
+    </div>
+  </body>
+  
+  {{>scripts}}
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      var path = app.require("vendor/couchapp/lib/path").init(app.req);
+      
+  		var postDoc = {{{doc}}};
+  		
+      $("form#edit_decision").submit(function() {
+  		  postDoc.date = $("input[name=date]").val();
+    		postDoc.relevant = $('input[name=relevant]').is(':checked');
+
+        app.db.saveDoc(postDoc, {
+          success : function(resp) {
+  		      $("#saved").text("Saved _rev: "+resp.rev).fadeIn(200);
+  		      window.setTimeout(function() {
+  		        window.location.href = '../view/{{id}}';
+  		      }, 600);
+          }
+        });
+        return false;
+      });
+
+
+  });
+  </script>
+
+</html>

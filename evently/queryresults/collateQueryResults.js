@@ -7,7 +7,7 @@ function (e, data) {
     // $.log(row);
     if (row.id === $$(this).results[i].id) {
       $$(this).results[i].date = row.value.date;
-      $$(this).results[i].content = row.value.content.substring(0,80);
+      $$(this).results[i].content = row.value.content.substring(0,120);
     }
     else {
       $.log("PROBLEM -- Non-matching ids!");

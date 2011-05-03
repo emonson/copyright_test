@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="{{assets}}/style/main.css" type="text/css">
+  </head>
+  <body>
+    {{>header}}
+
+    <div id="post_content">
+
+      <h3>Date:</h3>
+      <p>{{date}}</p>
+      
+      <h3>Relevant:</h3>
+      <p>{{relevant}}</p>
+      
+      <h3>Attachments:</h3>
+      {{#attachments}}
+        <li><a href="{{att_url}}">{{att_name}}</a></li>
+      {{/attachments}}
+      
+      <!-- Any straight html that gets passed needs the 
+           triple mustaches so it is "unescaped" and acts like
+           real html rather than printing all the <p>, etc. 
+           {{{world}}} uses markdown.encode which generates html from markdown -->
+      <h3>Content:</h3>
+      {{{content}}}
+       
+      <h3>Type:</h3>
+      <p>{{type}}</p>
+      
+      <h3>ID:</h3>
+      <p>{{id}}</p>
+      
+    </div>
+  </body>
+</html>

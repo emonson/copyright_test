@@ -1,7 +1,7 @@
 function(e, results) {
   var elem = $(this);
   // $.log("retrieving results");
-  // $.log(results.rows);
+  $.log(results.rows);
   $$(this).num_results = results.rows.length;
   
   // First, just build up a list of ids which match lucene search
@@ -9,7 +9,12 @@ function(e, results) {
   for (var i=0; i<results.rows.length; i++) {
     var row = results.rows[i];
     ids_list.push(row.id);
-    $$(this).results.push({"id" : row.id, "score" : row.score.toFixed(2)});
+    if (row.hasOwnProperty('score')) {
+      $$(this).results.push({"id" : row.id, "score" : row.score.toFixed(2)});
+    }
+    else {
+      $$(this).results.push({"id" : row.id, "score" : ""});
+    }
   }
   
   var ids_object = { "keys" : ids_list };
