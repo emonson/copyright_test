@@ -31,6 +31,7 @@ function(doc, req) {
     data.id = doc._id;
     data.header.id = doc._id;
     data.date = doc.date;
+    data.court = doc.court;
     data.type = doc.type;
     data.content = html;
     data.relevant = doc.relevant ? "checked" : "";

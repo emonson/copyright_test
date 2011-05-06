@@ -12,8 +12,10 @@ function(head, req) {
     while(row = getRow()) {
 	datalist.push({
 		"date": row.value.date,
-	    "type": row.value.type,
-	    "content_sub": row.value.summary
+	  "type": row.value.type,
+	  "court": row.value.court,
+	  "relevant": row.value.relevant.toString(),
+	  "content_sub": row.value.summary
 	});
     }
 

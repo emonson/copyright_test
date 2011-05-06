@@ -13,7 +13,7 @@
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{132, 990}</string>
+		<string>{238, 972}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -22,14 +22,16 @@
 		<key>ExpandedURLs</key>
 		<array>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/_attachments/style</string>
-			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults</string>
-			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/_init</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/result</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_field</string>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists</string>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows</string>
-			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/partials</string>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/byid</string>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/date</string>
 			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years</string>
+			<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years_courts</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
@@ -40,79 +42,13 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/collateQueryResults.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years/map.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/view.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/view.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/_attachments/style/main.css</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/extradata.json</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/result/mustache.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/edit.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/edit.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_field/index.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_date/index.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_content/index.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/doQuery.js</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/retrieveQueryResults.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years_courts/map.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
@@ -124,7 +60,55 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/views/years/map.js</string>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/collateQueryResults.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/evently/queryresults/result/mustache.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/fulltext/by_field/index.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/edit.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/shows/view.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/edit.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/view.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/lists/summary.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/emonson/Programming/CouchApp/copyright_test/templates/summary.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

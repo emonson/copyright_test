@@ -7,6 +7,13 @@ function (e, data) {
     // $.log(row);
     if (row.id === $$(this).results[i].id) {
       $$(this).results[i].date = row.value.date;
+      $$(this).results[i].court = row.value.court;
+      if (row.value.relevant) {
+        $$(this).results[i].relevant = "Relevant";
+      }
+      else {
+        $$(this).results[i].relevant = "";
+      }
       $$(this).results[i].content = row.value.content.substring(0,120);
     }
     else {
