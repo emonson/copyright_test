@@ -9,6 +9,7 @@
     <h2>Copyright decisions lucene search</h2>
      <div id="queryform"><p>Some examples</p></div>
      <div id="queryresults"><p>Empty items!</p></div>
+     <div id="courtplot"><p>Graph</p></div>
   </body>
   
   <script src="vendor/couchapp/loader.js"></script>
@@ -16,7 +17,9 @@
     $.couch.app(function(app) {
       $("#queryform").evently("queryform", app);
       $("#queryresults").evently("queryresults", app);
+      $("#courtplot").evently("courtplot", app);
       $.evently.connect("#queryform", "#queryresults", ["doQuery"]);
+      $.evently.connect("#queryresults", "#courtplot", ["plotcourts"]);
     });
   </script>
   
