@@ -13,7 +13,7 @@
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{129, 778}</string>
+		<string>{80, 778}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -21,10 +21,10 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
+			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/_attachments/script</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/_attachments/style</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/evently/courtplot/_init</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/evently/courtplot/graph</string>
-			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/evently/queryform/_init/selectors/form</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/evently/queryresults/_init</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/evently/queryresults/result</string>
 			<string>file://localhost/Users/emonson/Programming/CouchDB/copyright_test/fulltext/by_field</string>

@@ -1,3 +1,4 @@
+<p>Relevant cases per court</p>
 <div id="thisplot"></div>
 
 <style type="text/css">
@@ -21,11 +22,12 @@ svg {
 <script type="text/javascript">
 
 var data = [{{court_counts}}];
+var cats = ['1','2','3','4','5','6','7','8','9','10','11','DC','Fed','Cus','Cl'];
 
-var width = 200,
+var width = 180,
     height = 400,
-    border = 20,
-    num_ticks = 5;
+    border = 30,
+    num_ticks = 4;
 
 var x = d3.scale.linear()
     .domain([0, d3.max(data)])
@@ -41,7 +43,7 @@ var chart = d3.select("#courtplot")
     .attr("width", width)
     .attr("height", height)
   .append("svg:g")
-    .attr("transform", "translate(10,15)");
+    .attr("transform", "translate(25,20)");
 
 chart.selectAll("line")
     .data(x.ticks(num_ticks))
@@ -78,6 +80,17 @@ chart.selectAll("text.rule")
     .attr("y", 0)
     .attr("dy", -3)
     .attr("text-anchor", "middle")
+    .text(String);
+
+chart.selectAll("text.cats")
+    .data(cats)
+  .enter().append("svg:text")
+    .attr("class", "cats")
+    .attr("x", 0)
+    .attr("y", function(d,i) { return y(i) + ((height-border)/data.length-2)/2; })
+    .attr("dx", -3)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "end")
     .text(String);
 
 chart.append("svg:line")
